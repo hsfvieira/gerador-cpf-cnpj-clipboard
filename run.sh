@@ -1,5 +1,5 @@
 #!/usr/bin/zsh
 
-alias gen_cpf="deno run --allow-run $HOME/Projetos/gerador-cpf-cnpj-clipboard/index.js"
+alias gen_doc="deno run --allow-run $HOME/Projetos/gerador-documentos-clipboard/index.js"
 
-gen_cpf $1
+gen_doc $1
