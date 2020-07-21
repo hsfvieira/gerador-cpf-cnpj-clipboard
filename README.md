@@ -2,8 +2,8 @@
 
 ### Como executar:
 
-- `./run.sh cpf`, para copiar um CPF
-- `./run.sh cnpj`, para copiar um CNPJ
+- `deno run --allow-run index.js cpf`, para copiar um CPF
+- `deno run --allow-run index.js cnpj`, para copiar um CNPJ
 - etc
 
 ### Documentos implementados:
