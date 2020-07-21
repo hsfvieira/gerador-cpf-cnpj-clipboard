@@ -6,7 +6,7 @@ export default function generateCpf() {
     return rgDigites + firstDig.toString()
 }
 
-function calculateFirst(rgDigites) {
+export function calculateFirst(rgDigites) {
     const weights = [2, 3, 4, 5, 6, 7, 8, 9]
     const listDigites = rgDigites.split('')
 

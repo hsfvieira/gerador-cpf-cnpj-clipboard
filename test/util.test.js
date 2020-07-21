@@ -1,3 +1,12 @@
-import { generateDigites } from '../util.js'
+import { generateDigites } from '../src/util.js'
 
-console.log(generateDigites(9))
+Deno.test(
+    'Gerando números aleatórios com uma quantidade determinada', 
+    () => {
+        const qtd = 9
+        const numero = generateDigites(qtd)
+        if(numero.length != qtd) {
+            throw 'Quantidade passada é diferente do retorno'
+        }
+    }
+)

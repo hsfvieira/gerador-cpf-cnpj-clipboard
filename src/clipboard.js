@@ -1,5 +1,3 @@
-
-
 export default async function writeClipboard(text) {
     const opt = {
         cmd: ['xsel', '-b', '-i'],
