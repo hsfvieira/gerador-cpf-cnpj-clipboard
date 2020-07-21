@@ -7,7 +7,7 @@ export default function generateCnpj() {
     return cnpjDigites + firstDig.toString() + secondDig.toString()
 }
 
-function calculateFirst(cnpjDigites) {
+export function calculateFirst(cnpjDigites) {
     const weights = [5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2]
     const listDigites = cnpjDigites.split('')
 
@@ -18,7 +18,7 @@ function calculateFirst(cnpjDigites) {
     return calc % 11 < 2 ? 0 : 11 - (calc % 11)
 }
 
-function calculateSecond(cnpjDigites) {
+export function calculateSecond(cnpjDigites) {
     const weights = [6, 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2]
     const listDigites = cnpjDigites.split('')
 

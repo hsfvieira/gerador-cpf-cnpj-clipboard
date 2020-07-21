@@ -7,7 +7,7 @@ export default function generateCpf() {
     return cpfDigites + firstDig.toString() + secondDig.toString()
 }
 
-function calculateFirst(cpfDigites) {
+export function calculateFirst(cpfDigites) {
     const weights = [10, 9, 8, 7, 6, 5, 4, 3, 2]
     const listDigites = cpfDigites.split('')
 
@@ -18,7 +18,7 @@ function calculateFirst(cpfDigites) {
     return calc % 11 < 2 ? 0 : 11 - (calc % 11)
 }
 
-function calculateSecond(cpfDigites) {
+export function calculateSecond(cpfDigites) {
     const weights = [11, 10, 9, 8, 7, 6, 5, 4, 3, 2]
     const listDigites = cpfDigites.split('')
 
