@@ -1,11 +1,11 @@
-import writeClipboard from './clipboard.js'
+import writeClipboard from './src/clipboard.js'
 
-import cpf from './cpf.js'
+import cpf from './src/cpf.js'
 
 const docs = {
     cpf
 }
 
-const argDoc = Deno.args[0]
+const argTypeDoc = Deno.args[0]
 
-writeClipboard(docs[argDoc]())
+writeClipboard(docs[argTypeDoc]())
